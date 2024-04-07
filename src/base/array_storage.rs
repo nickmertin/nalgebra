@@ -131,6 +131,12 @@ where
     {
         self.clone()
     }
+    
+    #[inline]
+    fn forget(self) {
+        // No additional cleanup required.
+        std::mem::forget(self);
+    }
 }
 
 unsafe impl<T, const R: usize, const C: usize> RawStorageMut<T, Const<R>, Const<C>>
