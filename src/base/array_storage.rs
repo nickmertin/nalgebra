@@ -131,7 +131,7 @@ where
     {
         self.clone()
     }
-    
+
     #[inline]
     fn forget(self) {
         // No additional cleanup required.
