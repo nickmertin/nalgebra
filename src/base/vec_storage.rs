@@ -1,3 +1,4 @@
+use alloc::format;
 #[cfg(all(feature = "alloc", not(feature = "std")))]
 use alloc::vec::Vec;
 
